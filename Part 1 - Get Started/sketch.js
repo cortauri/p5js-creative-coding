@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
   
-  //Zeichenwerkzeuge setzen
+  //1. Zeichenwerkzeuge setzen
   //Wähle die Farbe
   background(200)
   fill(255)
@@ -14,7 +14,7 @@ function draw() {
   //Wähle die Pinselbreite
   strokeWeight(5)
   
-  //Shapes
+  //2. Zeichnen der Formen
   rect(0,0,200,200)
   circle(200,200,40)
   ellipse(240,240,50,100)
