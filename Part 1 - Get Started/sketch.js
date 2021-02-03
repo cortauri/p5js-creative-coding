@@ -1,5 +1,5 @@
 function setup() {
-  //Erstelle Leinwand
+  //Erstelle eine Leinwand
   createCanvas(400, 400)
 }
 
@@ -20,5 +20,7 @@ function draw() {
   ellipse(240,240,50,100)
   line(400,400,200,200)
   point(150,300)
+  fill(0)
+  arc(50, 50, 80, 80, 0, PI * 2)
   
 }
