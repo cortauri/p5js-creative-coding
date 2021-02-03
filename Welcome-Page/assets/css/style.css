@@ -1,0 +1,264 @@
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Outline&display=swap");
+* {
+  font-size: 100%;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0 none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* SCSS RGB */
+.fl-col {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.fl-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.fl-colrev {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+.fl-rowrev {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+.w {
+  flex-flow: wrap;
+}
+
+.fb1 > * {
+  flex-basis: 100%;
+}
+
+.fb2 > * {
+  flex-basis: 50%;
+}
+
+.fb4 > * {
+  flex-basis: 25%;
+}
+
+.fb5 > * {
+  flex-basis: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  .fl-col-desk {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .fl-row-desk {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .fl-colrev-desk {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .fl-rowrev-desk {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+  }
+}
+html {
+  background: #151515;
+  font-family: "Montserrat";
+  background: url("../img/IMG_0636.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  color: #000;
+  min-height: 100vh;
+  background: black;
+  text-shadow: 2px 2px #000;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #f72585;
+  text-shadow: none;
+}
+
+a:hover {
+  font-weight: 600;
+  color: yellowgreen;
+  text-shadow: 2px 2px #000;
+}
+
+.nav {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+.nav ul > li {
+  margin: auto;
+  padding: 1.5em;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 0.75em;
+  font-weight: 700;
+}
+
+.container-logo {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  background: url("https://images.unsplash.com/photo-1527075240784-552cddfbb143?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2710&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #000;
+  filter: invert(0);
+}
+.container-logo .logo {
+  margin: auto;
+  background: url("../../assets/media/bice.svg");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  height: 170px;
+  width: 170px;
+  padding: 2em;
+}
+
+hgroup {
+  text-transform: lowercase;
+  text-align: center;
+  margin: auto;
+  color: gainsboro;
+  padding: 1em;
+  width: auto;
+  filter: invert(0);
+}
+hgroup h1 {
+  margin: auto;
+  font-size: 5em;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+}
+hgroup span {
+  font-weight: 700;
+  color: gainsboro;
+}
+hgroup h2 {
+  margin: 0.25em 0 0.5em 0.54em;
+  font-size: 2em;
+  letter-spacing: 0.34em;
+  font-weight: 600;
+  font-family: "Bungee";
+  text-transform: uppercase;
+}
+
+.container-photos {
+  display: flex;
+  flex-direction: column;
+  background: url("https://images.unsplash.com/photo-1562813733-b31f71025d54?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2698&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container-photos article {
+  width: 100vw;
+  margin: auto;
+  color: gainsboro;
+  display: flex;
+  flex-direction: column;
+}
+.container-photos article h1 {
+  text-align: center;
+  font-family: "Bungee";
+  font-size: 2.7em;
+}
+.container-photos article p {
+  font-size: 1.35em;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.container-idea {
+  background: url("https://images.unsplash.com/photo-1536339258903-69fa31f99a28?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.container-idea article h1 {
+  color: orangered !important;
+}
+
+.container, .container-idea, .container-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background: #343a40;
+  background: url(https://images.unsplash.com/photo-1549590143-d5855148a9d5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: gainsboro;
+  min-height: 100vh;
+}
+.container article, .container-idea article, .container-footer article {
+  padding: 3em;
+  margin: auto;
+}
+.container article h1, .container-idea article h1, .container-footer article h1 {
+  font-size: 2.7em;
+  text-align: center;
+  margin: 0 0 2em 0;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Bungee";
+}
+.container article p, .container-idea article p, .container-footer article p {
+  font-size: 1.35em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .container article p, .container-idea article p, .container-footer article p {
+    column-count: 2;
+    text-align: justify;
+  }
+}
+
+.container-footer {
+  background: url("https://images.unsplash.com/photo-1600493572531-c056ef2eaac4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: gray;
+}
+.container-footer article {
+  margin: 0 auto;
+}
+.container-footer article p {
+  min-height: 100%;
+  display: block;
+  font-size: 1.35em;
+}
