@@ -240,25 +240,74 @@ hgroup h2 {
   line-height: 1.8em;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .container article p, .container-idea article p, .container-footer article p {
-    column-count: 2;
-    text-align: justify;
-  }
-}
 
 .container-footer {
   background: url("https://images.unsplash.com/photo-1600493572531-c056ef2eaac4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  color: gray;
+  color: maroon;
 }
 .container-footer article {
   margin: 0 auto;
 }
 .container-footer article p {
-  min-height: 100%;
-  display: block;
   font-size: 1.35em;
+}
+
+.function, .end {
+  background: url("https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: gray;
+}
+.function article h1, .end article h1 {
+  color: red;
+}
+.function article p, .end article p {
+  margin: auto;
+  font-size: 2em;
+  color: white;
+  font-weight: 700;
+  color: gold;
+  text-align: center !important;
+}
+
+.end {
+  background: url("https://images.unsplash.com/photo-1522193128704-bcb76544ba8d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2725&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.end article h1 {
+  color: palegreen;
+  font-size: 2em;
+}
+.end article p.pancake {
+  font-size: 1em;
+  color: red;
+  font-family: "Bungee";
+}
+
+.final {
+  background: url("https://images.unsplash.com/photo-1506368083636-6defb67639a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2734&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.final article h1 {
+  color: red;
+  font-size: 3em;
+}
+.final article h1 span {
+  text-decoration: line-through !important;
+}
+.final article h1 span:nth-child(odd) {
+  text-decoration: none !important;
+}
+.final article p.pancake {
+  font-size: 1em;
+  color: red;
+  font-family: "Bungee";
 }
