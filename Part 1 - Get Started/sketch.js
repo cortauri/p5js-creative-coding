@@ -22,5 +22,11 @@ function draw() {
   point(150,300)
   fill(0)
   arc(50, 50, 80, 80, 0, PI * 2)
+  
+  if (mouseIsPressed) {
+    ellipse(mouseX, mouseY, 50, 50)
+  } else {
+    
+  } 
   //console.log(frameCount)
 }
