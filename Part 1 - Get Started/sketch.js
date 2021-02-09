@@ -1,9 +1,32 @@
 function setup() {
-  //Erstelle eine Leinwand
-  createCanvas(400, 400);
+
 }
 
 function draw() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function draw() {
   
   //1. Zeichenwerkzeuge setzen
   //Wähle die Farbe
@@ -24,3 +47,4 @@ function draw() {
   arc(50, 50, 80, 80, 0, PI * 2)
   
 }
+*/
