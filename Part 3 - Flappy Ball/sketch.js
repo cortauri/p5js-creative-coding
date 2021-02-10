@@ -1,4 +1,5 @@
 
+//Objekte
 var ball;
 var hindernis = [];
 
@@ -48,10 +49,10 @@ function Ball(){
 function Hindernis() {
 
   this.top = random(height/2);
-  this.bottom = random(height/2);
+  this.bottom = random(height/2.3);
   this.x = width;
   this.w = 40;
-  this.speed = 4;
+  this.speed = 8;
   this.warning = false;
   
   //Erkenne Treffer
@@ -89,8 +90,9 @@ function Hindernis() {
   };
 }
 
+//Setze Leinwand und definiere Objekte
 function setup() {
-  createCanvas(400,600);
+  createCanvas(600, 600);
   ball = new Ball();
   hindernis.push(new Hindernis());
 }
@@ -99,7 +101,7 @@ function draw() {
   background(200);
   
   //nach je 80 Frames Hindernis zu Array hinzufügen
-  if (frameCount % 80 == 0) {
+  if (frameCount % 20 == 0) {
     hindernis.push(new Hindernis());
   }
   
