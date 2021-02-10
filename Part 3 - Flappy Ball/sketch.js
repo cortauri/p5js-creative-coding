@@ -1,3 +1,7 @@
+
+var ball;
+var hindernis = [];
+
 //Constructor Function Ball
 function Ball(){
   //Eigenschaften Ball und Physik
@@ -42,43 +46,48 @@ function Ball(){
 
 //Constructor Function Hindernis
 function Hindernis() {
+
   this.top = random(height/2);
   this.bottom = random(height/2);
   this.x = width;
   this.w = 40;
   this.speed = 4;
+  this.warning = false;
   
   //Erkenne Treffer
   this.hit = function(ball) {
     if (ball.y < this.top || ball.y > height - this.bottom){
       if (ball.x > this.x && ball.x < this.x + this.w) {
+        this.warning = true;
         return true;
       }
     }
-    return false;  
-  }
+    this.warning = false;
+    return false;
+
+  };
   
   //Zeichne das Hindernis
-  this.show = function(){
+  this.show = function() {
     fill(255);
+    if (this.warning) {
+      fill(255, 0, 0);
+    }
     rect(this.x, 0, this.w, this.top);
     rect(this.x, height-this.bottom, this.w, this.bottom);
-  }
+  };
   
   //Bewege das Hindernis
   this.update = function(){
     this.x -= this.speed;
-  }
+  };
   
   //Erkenne ob Objekt noch im Anzeigebereich
   this.offscreen = function(){
     if (this.x < -this.w) {
       return true; } else {return false;}
-  }
+  };
 }
-
-var ball;
-var hindernis = [];
 
 function setup() {
   createCanvas(400,600);
@@ -88,11 +97,6 @@ function setup() {
 
 function draw() {
   background(200);
-  
-  //Zeichne Ball
-  ball.show();
-  //Lass den Ball nach unten fallen
-  ball.update();
   
   //nach je 80 Frames Hindernis zu Array hinzufügen
   if (frameCount % 80 == 0) {
@@ -112,6 +116,11 @@ function draw() {
       console.log("hit");
     }
   }
+  
+  //Zeichne Ball
+  ball.show();
+  //Lass den Ball nach unten fallen
+  ball.update();
   
 
 }
